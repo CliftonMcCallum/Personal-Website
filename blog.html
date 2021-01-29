@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- Responsive meta tag for mobile-first development -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+	<!-- Bootsrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+	<link rel="icon" href="logo.png" type="image/x-icon">
+	<title>Blog</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      			<li class="nav-item active">
+        			<a class="nav-link" href="index.html">Home</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="about.html">About</a>
+                  </li>
+                <li class="nav-item">
+        			<a class="nav-link" href="blog.html">Blog</a>
+      			</li>
+  		</div>
+	</nav>
+	<div class="container">
+		<section class="jumbotron">
+				<h1><u><b>Blog Post 2</b></u></h1>
+				<h3><i>Reflections on Open Source in Today's World</i></h3>
+				<h4><i>January 27, 2021</i></h4>
+				<p>I chose two articles to read from <a href="https://www.opensource.com">opensource.com</a> on containerization because our project, Open Library, uses Docker as the development environment.
+				   While I have used Docker at a Hackathon and in a data management course, I have not used it in a large-scale development environment like the one for Open Library. I also know that Docker
+				   has a large user base among the open-source community.   
+				</p>
+				<p>In the first <a href="https://opensource.com/resources/what-docker">article</a> titled, “What is Docker?,” the author considers the definition of Docker, its use cases, how to set it 
+					up on your machine, security features, and the big picture of containerization. First, Docker is a way to virtualize without having to create a virtual machine. In other words,
+					Docker can use an existing Linux kernel on the host system to run the containers. Well, how does this work on Windows? Fortunately, WSL 2 provides a solution for Windows users. 
+					VS Code even recognizes that I’m using WSL 2 to run a lightweight utility virtual machine on the Linux OS. I suppose there is a virtual machine in my case, but it isn’t the same 
+					as running virtual box, which runs with more layers away from root. 
+				</p>
+				<p>Second, Docker is mostly used for DevOps teams to keep developers focused on writing code instead of thinking about the intricacies of compatibility issues. Third, setting up 
+					Docker really couldn’t be easier now. It was once the case that Windows users needed Windows Professional, but as previously discussed, WSL 2 provides a solution to this. 
+					Now Mac and Windows users are basically on a level playing field. Fourth, Docker containers “do not contain.” In Daniel Walsh’s article titled, “Are Docker containers really 
+					secure?” he writes, “[f]rom a security point of view, containers are much weaker.” I am certainly not a security expert yet, but Walsh attributes this vulnerability to running 
+					the services close to root instead of non-root. Lastly, containers can be placed into three separate software categories: Builder, Engine, and Orchestration. The builder is 
+					the tech used to build the container. The engine is the tech to run a container, and Orchestration is the tech to manage containers.  
+				</p>
+				<p>Lacey Williams, who is also an English major turned tech geek, gave a <a href="https://opensource.com/article/18/12/python-and-containers-conference-talks">talk</a> at djangocon.us 
+					in 2018 called “An Intro to Docker for Djangonauts” that unpacks the basic language surrounding Docker through the lens of Harry Potter, specifically the concept of Polyjuice 
+					potion, which is a potion used to turn into someone else when the hair of that other person is put in the potion and then consumed. In this metaphor, Docker is the potion, the 
+					image is the person you want to turn into, the container is you, the Dockerfile is the hair of the person you want to turn into. In the world of Harry Potter, the hair tells 
+					the potion how to change into someone else, and the potion is consumed to transform into that person. 
+				</p> 
+				<p>Meanwhile, in the world of containerization, we use the Dockerfile to tell Docker how to build the image. We then run the project in a container. Some code that is essential to 
+					every Docker container is $ docker build. Before you can build, there must be a Dockerfile. It seems that most projects that have already been established already have a Dockerfile
+					 as part of the repository, which means that creating a Dockerfile is one of those steps that an open-source contributor rarely needs to do. Interestingly, each time the Dockerfile 
+					 is built, it will rely on a previously cached version unless changes have been made to the Dockerfile. In that case, the cached version is loaded, then the changes and everything 
+					 after the changes are built. 
+				</p>
+				<p>It turns out that there are a lot of things to type when using regular Docker. In other words, it can become a bit syntactically verbose, as alluded to in the previous paragraph. 
+				   Thankfully, Docker has a workaround called Docker compose. Docker compose allows for naming conventions to be explicit in a docker-compose.yml file. Here you can name the 
+				   containers, volume, ports for mapping locally, and dependencies such as a database that the web service container might depend on. While it is not recommended to host your 
+				   database from a container because databases are stateful, not stateless, using an old version of a database in a container for production reasons is an option. In fact, Alice 
+				   Goldfuss’ <a href="https://opensource.com/article/18/12/python-and-containers-conference-talks">talk</a> titled, “The Container Operator’s Manual,” she recommends that all databases be located on the cloud. 
+				</p>
+				<p>These articles are a good starting place for continuing my education with Open Source. My next steps with Open Library are going to be to understand the architecture and way to 
+				   communicate with the database locally. In this way I will be better equiped to solve code challenges as opposed to developing within a challenging environment.  
+				</p>
+		</section>
+	</div>
+	<div class="container">
+		<section class="jumbotron">
+			<h1><u><b>Blog Post 1</b></u></h1>
+			<h3><i>Reflections of FOSS:</i></h3>
+            <h4><i>January 21, 2021</i></h4>
+			<p>Since my last post, I was assigned to my team: Quad Squad. We generated a <a href="https://github.com/CSCI-462-01-2021/Quad-Squad/wiki/Top-Three-Choices">list</a> 
+				of three free-open-source software (foss) candidates that we will begin building locally on our machines to determine our project for the semester.
+				 We picked <a href="https://github.com/TEAMMATES/teammates">TEAMMATES</a>, <a href="https://github.com/internetarchive/openlibrary">Open Library</a>, and 
+				<a href="https://github.com/Cadasta/cadasta-platform">Cadasta</a> to fork and clone to our machines. I finished setting up the development environment
+				 for TEAMMATES yesterday. According to their README on GitHub, “TEAMMATES is a free online tool for managing peer evaluations and other
+				 feedback paths of your students.” Because I have a background as an English teacher, TEAMMATES is exciting prospect. It also has a large
+				 user base of hundreds of universities across the world. This effect of wide adoption from an open-source project has its origins in Linus Torvalds, the creator
+				 of the Linux kernel. In Eric Raymond’s “The Cathedral and the Bazaar,” a reflection on the distinctions between closed-source software 
+				(the cathedral) and open-source-software (the bazaar), Raymond argues, “…Linus’s cleverest and most consequential hack was not the construction of the 
+				Linux kernel itself, but rather his invention of the Linux development model”(7). That is, Linus developed a method for contributing to Linux
+				 that laid the foundation for later development projects such as TEAMMATES to flourish.
+				 
+            </p>
+            <p>The objective of FOSS is certainly appealing. I like the idea of providing free alternatives to closed-source software. Larger companies may suffer a 
+				bit from FOSS projects; however, they will adapt to the competition. The second reading titled, “Comparisons of open-source and closed-source software” 
+				examines the impacts of FOSS on Microsoft. FOSS has encouraged Microsoft to diversify its product line, “developing versions of…products with basic 
+				functionality that are sold at lower prices than standard versions.” Not everyone can afford to purchase several different software licenses to run 
+				their small business efficiently. FOSS has provided greater access to the tools that we all need to be productive and compete in a global economy.  
+			</p>
+
+            <p>While one of the goals of FOSS is to provide alternatives to closed-source software, there are also many lessons surrounding the development of these free 
+				alternatives that are outlined in Eric Raymond’s “The Cathedral and the Bazaar.” Of the first five lessons that Raymond outlines early on, I found my own 
+				experience with programming a mirror of Raymond’s third lesson: “[y]ou often don’t really understand the problem until after the first time you implement 
+				a solution. The second time, maybe you know enough to do it right. So if you want to get it right, be ready to start over at least once.” For example, Java 
+				programming was very challenging for me. In fact, all programming has been challenging. Nevertheless, I have persevered through my education. I supplemented 
+				my learning with outside resources. I took the Massive Open Online Course (MOOC) offered through the University of Helsinki 
+				for <a href="https://java-programming.mooc.fi/">Java I and Java II</a>. While this isn’t a perfect analogy for building projects or contributing to FOSS, it is something that has occurred with great frequency 
+				throughout my education and programming experience.  
+            </p>
+            <p>Another lesson that typifies my initial experience with Java is “[o]ften, the most striking and innovative solutions come from realizing that your concept of 
+				the problem was wrong”(14). For example, I had difficulty with some of the early assignments that would require one to use loops and conditional statements to 
+				create different shapes using asterisks and blank spaces. My initial design was naïve and attempted to tackle the entire problem with one fail swoop. Upon working 
+				through a similar problem on the University of Helsinki’s course, I divided the problem into separate methods and found immediate success. I know that I will encounter 
+				similar problems while working on our project this semester. I must be willing to create new conceptualizations as needed to solve novel problems. That is to say 
+				that some problems “need to be reframed”(14). 
+			</p> 
+			<p>The last line of Raymond’s text was poignant for me: “It may well turn out that one of the most important effects of open source’s success will be to teach us that play
+				 is the most economically efficient mode of creative work”(29). Corporations and startups have adopted the spirit of this sentiment. I noticed tricycles, nerf guns, and
+				 game systems at a hackathon once. While these be viewed as infantilizing, I think that I now understand the ethos behind them. Many companies understand that creativity
+				 doesn’t operate in a vacuum and are willing to offer opportunities for escape through play because it is often that second or third try that a programmer realizes that
+				 the concept of the problem was wrong. These chances for epiphanic moments are optimized in an environment that provides opportunities to experience joy that comes from
+				 play. 
+			</p>
+		</section>
+	</div>
+<div class="container">
+	<section class="jumbotron">
+			<h1><u><b>Blog Post 0</b></u></h1>
+			<h3><i>Introduction: </i></h3>
+            <h4><i>January 13, 2021</i></h4>
+			<p>My name is Clifton! This is my first blog post for my class, CSCI - 462 Software Engineering Practicum, at the College of Charleston. 
+               Currently, I am working at MonoStereo, a record distributor. My role is data analyst and data entry specialist. I use excel to manage new 
+               releases and upload data to a Magento eCommerce Platform among other things. It is a lot of fun for me because I love music. I get to see new titles before they're announced to the public!
+               Nevertheless, don't ask me if your favorite artist has an upcoming release; I signed an NDA. You'll just have to wait like everyone else. :) 
+            </p>
+            <p>My goals for this class revolve around my desire to learn as much as possible about the software engineering process. 
+               Considering that we will be working in teams, which mirrors real-word dynamics, I know that this will foster learning and hold us accountable to each other.</p>
+            <p>As others have mentioned already, I too would like to work on a project that uses tools and languages that I have familiarity with. (Yes, you can end a sentence with a preposition.) 
+                I know that all of us have used Python and Java, so let's try to stick with those languages. This is not to say that I do not wish to use novel tools to solve novel problems. 
+            </p>
+            <p>At any rate, I look forward to being paired with my team tomorrow and picking an open-source project together! </p> 
+	</section>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+
+.navbar .nav-item{
+	margin-left: 2em;
+}
+
+.navbar .nav-item {
+	font-family: 'acme', 'helvetica', 'arial';
+	font-weight: 800;
+	font-size: 28px;
+	transition: .1s linear;
+	border: 1px solid transparent;
+
+}
+/*
+#about {
+	font-size: 24px;
+}*/
+
+.navbar .nav-item:hover {
+	transform: scale(1.1);
+}
+
+nav {
+	margin-bottom: 1.33em;
+}
+
+.col-sm {
+	margin-left: 5%;
+}
+
+.navigation {
+	padding-left: 19em;
+}
+
+.container .jumbotron {
+	font-family: 'ubuntu', sans-serif;
+/*This is a variant of white text that is worth considering*/
+	/*color: #F5FBFD;*/
+/*	
+  This is a blue background variation:
+	color: #36454f;
+	background-color: #52B8DB;*/
+	
+/*minimalist design*/
+	color: #F5FBFD;
+	background-color: #343a40;
+/*	letter-spacing: 1.5px;
+	word-spacing: .1em;*/
+}
+
+.container .jumbotron a {
+	color:cadetblue;
+	text-decoration: none;
+
+}
+.container .jumbotron a:hover {
+	color:coral;
+
+}
+
+
+img:hover {
+	transform: scale(1.05);
+}
+
+html body {
+	background-color: #36454f;
+	
+}
+.container {
+	background-color: #36454f;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+	.navbar .nav-item:hover {
+	
+	background-color: #343a40;
+	border-radius: 10%;
+	transform: scale(1.01);
+}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	#resume img {
+		width: 175px;
+	}
+
+	#linkedIn img {
+		width: 175px;
+	}
+
+	#email img {
+		width: 175px;
+	}
+}
+@media screen and (max-width: 1000px) {
+
+	#resume img {
+		width: 160px;
+	}
+
+	#linkedIn img {
+		width: 160px;
+	}
+
+	#email img {
+		width: 160px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+
+	#resume img {
+		width: 150px;
+	}
+
+	#linkedIn img {
+		width: 150px;
+	}
+
+	#email img {
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 940px) {
+
+	#resume img {
+		width: 140px;
+	}
+
+	#linkedIn img {
+		width: 140px;
+	}
+
+	#email img {
+		width: 140px;
+	}
+}
+@media screen and (max-width: 770px) {
+
+	#resume img {
+		width: 135px;
+	}
+
+	#linkedIn img {
+		width: 135px;
+	}
+
+
+	#email {
+		margin-left: 25%;
+	}
+	#email img {
+		width: 135px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#resume {
+		margin-left: 25%;
+	}
+	#resume img {
+		width: 130px;
+		margin-bottom: 20px;
+	}
+
+	#linkedIn img {
+		width: 130px;
+		margin-bottom: 20px;
+	}
+		#linkedIn {
+		margin-left: 25%;
+
+	}
+	#email {
+		margin-left: 25%;
+	}
+	#email img {
+		width: 130px;
+		margin-bottom: 20px;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+	#resume {
+		margin-left: 25%;
+
+	}
+	#resume img {
+		width: 125px;
+		margin-bottom: 20px;
+	}
+
+	#linkedIn {
+		margin-left: 25%;
+
+	}
+	#linkedIn img {
+		width: 125px;
+		margin-bottom: 20px;
+	}
+
+	#email {
+		margin-left: 25%;
+	}
+	#email img {
+		width: 125px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*contianer for resume, linkedin, and email*/
+/*#box {
+	width: 1920px;
+}*/
+
+/*#resume {
+	float: left;
+	margin-left: 29%;
+	
+}
+*/
+
+
+
+
+/*resizing for resume, linkedin and email png files*/
+/*@media screen and (max-width: 1500px) {
+	#resume {
+		margin-left: 15%;
+	}
+
+
+}
+@media screen and (max-width: 1200px) {
+	#resume {
+		margin-left: 10%;
+	}
+	#resume img {
+		width: 175px;
+	}
+	#linkedIn img {
+		width: 175px;
+	}
+	#email img {
+		width: 175px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	#resume {
+		margin-left: 8%;
+	}
+	#resume img {
+		width: 150px;
+	}
+	#linkedIn img {
+		width: 150px;
+	}
+	#email img {
+		width: 150px;
+	}
+}
+@media screen and (max-width: 770px) {
+	#resume {
+		margin-left: 5%;
+	}
+	#resume img {
+		width: 125px;
+	}
+	#linkedIn img {
+		width: 125px;
+	}
+	#email img {
+		width: 125px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#resume {
+		margin-left: 5%;
+	}
+	#resume img {
+		width: 100px;
+	}
+	#linkedIn img {
+		width: 100px;
+	}
+	#email img {
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#resume {
+		margin-left: 3%;
+	}
+	#resume img {
+		width: 75px;
+	}
+	#linkedIn img {
+		width: 75px;
+	}
+	#email img {
+		width: 75px;
+	}
+}
+@media screen and (max-width: 500px) {
+	#resume {
+		margin-left: 2%;
+	}
+			#resume img {
+		width: 75px;
+	}
+		#linkedIn img {
+		width: 75px;
+	}
+		#email img {
+		width: 75px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#resume {
+		margin-left: 3%;
+	}
+	#resume img {
+		clear: left;
+		display: block;
+		width: 75px;
+	}
+	#linkedIn img {
+		clear: left;
+		display: block;
+		width: 75px;
+	}
+	#email img {
+		clear: left;
+		display: block;
+		width: 75px;
+	}
+}
+@media screen and (max-width: 490px) {
+	.container .jumbotron {
+		width: 480px;
+	}
+
+
+}*/
+/*#email {
+	float: left;
+	margin-left: 5%;
+}
+#linkedIn{
+	float: left;
+	margin-left: 5%;
+}*/
