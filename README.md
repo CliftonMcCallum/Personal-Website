@@ -6,5 +6,5 @@ This is a way for me to use version control to monitor the progress of my websit
 I may be adding a different blog to track my progress with learning Microsoft Azure. I started my free account yesterday. 
 
 Add a portfolio link.
-## completed:
+## Completed:
 Added a link to GitHub.
