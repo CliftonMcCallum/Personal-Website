@@ -63,7 +63,27 @@ nav {
 	color:coral;
 
 }
+#blog {
+	text-align: justify;
+	text-justify: inter-word;
+}
 
+h1{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color:whitesmoke;
+}
+
+h6{
+	text-align: right;
+	color: rgb(133, 173, 125);
+}
+h3{
+	padding-bottom: 1em;
+	color: rgb(133, 173, 125);
+
+	
+
+}
 
 img:hover {
 	transform: scale(1.05);
