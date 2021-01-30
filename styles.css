@@ -13,9 +13,6 @@
 }
 /* github style for nav-icon */
 .navbar .git {
-	font-family: 'acme', 'helvetica', 'arial';
-	font-weight: 800;
-	font-size: 28px;
 	transition: .1s linear;
 	border: 1px solid transparent;
 	color:gray;
