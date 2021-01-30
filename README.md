@@ -4,3 +4,5 @@ This is a way for me to use version control to monitor the progress of my websit
 
 ## Future ideas:
 I may be adding a different blog to track my progress with learning Microsoft Azure. I started my free account yesterday. 
+
+Adding a Portfolio page or a link to GitHub is another idea for improving access to my work.
