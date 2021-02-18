@@ -37,6 +37,50 @@
 	</nav>
 	<div class="container">
 		<section class="jumbotron" id="blog">
+				<h6><i>February 18, 2021</i></h6>
+				<h5><strong>Blog Post Five:</strong></h5>
+				<h3><em>Stupid or Solid?</em></h3>
+				
+				<p>In William Durand’s blog post titled “From STUPID to SOLID Code!”, STUPID code is defined as code that uses singletons, tight coupling, premature optimization, indescriptive naming, 
+					and duplication. Additionally, STUPID code is untestable, which is probably the worst indiscretion from the above list. While it is good practice to read definitions and understand 
+					what not to do, it helps to put these definitions into context. We’ll begin with Singletons. First, let’s get a definition out of the way. As defined by William Durand, a Singleton 
+					is used everywhere. In other words, Singletons have global state. These are often referred to as globals or global variables in programming classes. 
+				</p>
+				<p>Toyota is a great example of what can go wrong when Singletons run amok. That is, when NASA Engineering and Safety Center filed a technical assessment report, they found 9,273 
+					globally scoped variables This caused them severe issues. Specifically, the 2005 Toyota Camry software had 82% of its data objects declared within unlimited scope (33). While 
+					Toyota did have a method for prioritizing tasks that are accessing the same data, this function didn’t always work as expected because the rules of implementation weren’t 
+					always followed. Another reason to avoid Singletons is because naming conventions are rendered completely ambiguous and devoid of meaning. While I am not familiar with the 
+					code in the 2005 Camry, I think it is safe to assume “u2g_gasram_read_u2 u1s_gasram_mirror” and “u2g_gasram_read_u2 ptg_gasram_u2db_tbl” are a bit overwrought and too similar 
+					to contain much semantic value.  
+				</p>
+				<p>I didn’t really intend to say that much about Singletons and indescriptive naming, but reading about them reminded me of the Toyota story.   
+				</p>
+				<p>Currently, an issue that I want to work on for Open Library is to move all Inline JavaScript to a separate file; however, the JS is tightly coupled with other python code, which 
+					makes moving it very problematic. Not only is tight coupling an issue, but the code lacks comments. As Durand suggests, “[y]ou write your code for people, not computers. They 
+					don’t understand what you write anyway. Computers just understand o and 1. Programming languages are for humans.” I am not using the Open Library example to call out anyone 
+					on their perceived programming deficiencies; rather, I am using it as an example of something that is prevalent in any large program. Of course, the goal is to minimize these 
+					types of issues by implementing SOLID code. 
+				</p> 
+				<p>Believe it or not, this is not my first time hearing about SOLID code. A friend of mine who is currently working as a software engineer suggested that I look into Uncle Bob’s 
+					module on Test Driven Development. The module before that one is SOLID Software Design. Unfortunately, I have not finished reading those, so this is something that I will 
+					complete within the next couple of weeks.   
+				</p>
+				<p>SOLID code uses the following guiding principles: Single Responsibility Principle, Open/Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, and 
+					Dependency Inversion Principle. The single responsibility is a self-describing term that refers to the need for classes to only have one responsibility. Open/Closed Principle
+					 means that “software entities should be open for extension, but closed for modification.” Liskov Substitution Principle “states that objects in a program should be replaceable 
+					 with instances of their subtypes without altering the correctness of the program.” When extending a class, the subclass should be able to actually extend the first class 
+					 without violating any setters of the parent. Interface Segregation is when programmers intentionally avoid implementing methods that aren’t used, which helps programmers avoid 
+					 tight coupling. Dependency Inversion “has two key points: Abstractions should not depend upon details; Details should depend upon abstractions.” 
+				</p>
+				<p>This is a difficult concept to understand. This definitely reinforces my need to read through Uncle Bob’s modules. Thankfully, William Durand seems to know his audience because he 
+					ends with “[e]ven if you don’t understand all these principles, always think before writing code. Take the time to understand those that you don’t understand. Honestly, writing 
+					SOLID code is not that hard.” With those words of encouragement, I think I can begin to think more about avoiding tight coupling while writing my code. In this way, I’ll begin to 
+					implement SOLID code.
+				</p>
+		</section>
+	</div>
+	<div class="container">
+		<section class="jumbotron" id="blog">
 				<h6><i>February 11, 2021</i></h6>
 				<h5><strong>Blog Post Four:</strong></h5>
 				<h3><em>What's Happening?</em></h3>
