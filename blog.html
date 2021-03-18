@@ -37,8 +37,53 @@
 	</nav>
 	<div class="container">
 		<section class="jumbotron" id="blog">
+				<h6><i>March 18, 2021</i></h6>
+				<h5><strong>Blog Post Seven: Reflections on Reading</strong></h5>
+				<h3><em>Chapter 5</em></h3>
+				
+				<p>This week’s reading is from our textbook and covers Domain Class Development. There are four main sections that discuss developing domain classes, testing them, merging 
+					results from tests, and integrating suggestions from the client based on their real-world use of the classes. 
+				</p>
+				<p>First, domain classes are defined from common vocabulary already in use by the organization. For example, most organizations need a person class or some other type of 
+					general class that will include more specific instances of that class such as employee, contractor, or customer to mention a few. The most important step to remember 
+					when developing domain classes is to use domain-specific vocabulary that is unique to the organization. There’s no sense in reinventing the wheel and adding the extra 
+					cost of users learning a new lexicon. Furthermore, legacy code may also already contain domain classes that could be copied or extended. Do this when possible; it will 
+					save loads of time.  Similarly, dividing classes between developers can also save time and provide “distribution of ownership” (139). 
+				</p>
+				<p>Second, testing these classes in the context of modern software development is mostly done through test-driven development (TDD), which was briefly mentioned in one of 
+					my previous posts. TDD gathers information and requirements at the same time that unit tests are developed. This simultaneity of development and testing is completely 
+					different than previous generations of development, which approached development and testing more linearly. That is not to suggest that we should disparage older developers; 
+					rather, they should be praised for pioneering the tools that we have today. At any rate, TDD operates from a practical level as a part of the project. The author suggests 
+					keeping “a separate directory of test cases…among the code directories themselves”(140). This is a simple solution that seems obvious, but it is worth being intentional 
+					when working on projects that can quickly grow to a size that can outpace the ability of any one person to master all of the classes. This is why a test suite is used to 
+					cover all of the classes in the project, even though not all tests will be complete or maintain 100 percent “correctness.” Because a test suite is so important, I will 
+					summarize some of its aims as outlined in the text:</p>
+				<ol>
+					<li>The test suite should have one unit test per class.</li>
+					<li>Each constructor or function must be called in these tests; the result must return a Boolean value of true or false. I suppose the days of System.out.println(Insert 
+						something to test here); are over. :)
+					</li>
+					<li>Writing</li>
+					<li>The last of these goals seems a bit lofty, but the aim is to test 100% of the code and 100% of the use cases. That means that basically every line of code should be 
+						tested. The book suggests that this is a weak strategy because it can miss some of the edge cases that might not be obvious. 
+					</li>
+				</ol>
+				<p>The books suggests using unittest for Python, which comes with Python. I haven’t used this before, but I think I’ll give it a try. I recently used Tkinter for the first time. 
+					For those of you who are unfamiliar with Python or Tkinter, Tkinter is Python’s built in GUI. I want to build a database using Tkinter to give myself a challenge. 
+					I digress. The other frameworks that are suggested in the book are JUnit for Java and PHPUnit for PHP. 
+				</p>
+				<p>Third, integration testing aims to test how classes interact with one another. While unit testing is focused on the smaller individual units, developers use integration to 
+				   see how those smaller parts communicate with one another.   
+				</p>
+				<p>Lastly, the author suggests that placing the tested code into a sandbox environment for the client will enable them to work on the system without potentially breaking 
+					something. In this way the developer and the client can then begin to work more closely to track issues and resolve them with help from the appropriate leads.
+				</p>
+		</section>
+	</div>
+	<div class="container">
+		<section class="jumbotron" id="blog">
 				<h6><i>March 12, 2021</i></h6>
-				<h5><strong>Blog Post Six:</strong></h5>
+				<h5><strong>Blog Post Six: Reflections on Readings</strong></h5>
 				<h3><em>Release Early and Often</em></h3>
 				
 				<p>This week’s reading from chapter 8 of Client-Centered Software Development covers technical writing, user documentation, and user support to consider when preparing to deploy an 
@@ -78,7 +123,7 @@
 	<div class="container">
 		<section class="jumbotron" id="blog">
 				<h6><i>February 18, 2021</i></h6>
-				<h5><strong>Blog Post Five:</strong></h5>
+				<h5><strong>Blog Post Five: Reflections on S.O.L.I.D.</strong></h5>
 				<h3><em>Stupid or Solid?</em></h3>
 				
 				<p>In William Durand’s blog post titled “From STUPID to SOLID Code!”, STUPID code is defined as code that uses singletons, tight coupling, premature optimization, indescriptive naming, 
@@ -122,7 +167,7 @@
 	<div class="container">
 		<section class="jumbotron" id="blog">
 				<h6><i>February 11, 2021</i></h6>
-				<h5><strong>Blog Post Four:</strong></h5>
+				<h5><strong>Blog Post Four:Reflections on an IEEE Article</strong></h5>
 				<h3><em>What's Happening?</em></h3>
 				
 				<p>This week I was asked to read an article from the IEEE Software publication. IEEE is the Institute of Electrical and Electronics Engineers. The authors of "Trends and Challenges 
@@ -157,7 +202,7 @@
 	<div class="container">
 		<section class="jumbotron" id="blog">
 				<h6><i>February 03, 2021</i></h6>
-				<h5><strong>Blog Post Three:</strong></h5>
+				<h5><strong>Blog Post Three: Experience Report</strong></h5>
 				<h3><em>This Bugs Me</em></h3>
 				
 				<p>Exercise 6.4 of the Teaching Open Source text requires that I find the oldest bug in Open Library’s issues tracker that hasn’t been resolved. Thankfully, Open Library 
@@ -195,7 +240,7 @@
 	<div class="container">
 		<section class="jumbotron" id="blog">
 			<h6><i>January 27, 2021</i></h6>
-				<h5><strong>Blog Post Two: </strong></h5>
+				<h5><strong>Blog Post Two: Reflections on Two Articles</strong></h5>
 				<h3><em>Reflections on Open Source in Today's World</em></h3>
 
 				
@@ -293,7 +338,7 @@
 <div class="container">
 	<section class="jumbotron" id="blog">
 			<h6><i>January 13, 2021</i></h6>
-			<h5><strong>Blog Post Zero:</strong></h5>
+			<h5><strong>Blog Post Zero: Hello, world!</strong></h5>
 			<h3><em>Introduction </em></h3>
             
 			<p>My name is Clifton! This is my first blog post for my class, CSCI - 462 Software Engineering Practicum, at the College of Charleston. 
