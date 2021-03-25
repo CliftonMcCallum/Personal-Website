@@ -37,6 +37,46 @@
 	</nav>
 	<div class="container">
 		<section class="jumbotron" id="blog">
+				<h6><i>March 24, 2021</i></h6>
+				<h5><strong>Blog Post Eight: Reflections on Reading</strong></h5>
+				<h3><em>Chapter 6</em></h3>
+				
+				<p>This week’s reading is from chapter six of our textbook. It is a high-level view of database development through the lens of free-open-source software. The chapter is 
+					broken down into four sections. The first section is on database principles, laying the foundation for the remaining sections. The author also suggests enrolling in 
+					a database class; thankfully I am taking database concepts at CofC, which has definitely been a boon to my understanding this chapter. The second section covers some 
+					common queries that every database administrator will use in declarative languages such as SQL; it also discusses security concerns and best practices. The third section 
+					builds upon the previous chapter, covering database testing with unit and integration tests. The fourth section examines issue tracking and the need for more sophisticated 
+					integration testing because issues in databases can often seep into the client view.  
+				</p>
+				<p>First, the database principles section provides many resources for learning SQL and combining SQL with other languages. 
+				</p>
+				<p>Next, the author examines sample code to illustrate using PHP with a SQL database. My server-side programming course exclusively used this combination of technologies. 
+					Of course there can’t be a chapter on databases without discussing queries. The author unpacks the core queries: CREATE TABLE, DROP TABLE, SELECT, INSERT INTO, DELETE 
+					FROM, and UPDATE. Surprisingly, CREATE DATABASE and DROP DATABASE aren’t mentioned until later in the chapter. Also, the php that is used isn’t how we used it in my 
+					server-side programming class. The examples in the book use mysqli instead of using the PDO class. At any rate, this chapter is mostly review. The next subsection of 
+					part two discusses normalization, another major topic in my database concepts course. Throughout this section the author unpacks the benefits of normalization without 
+					getting into the weeds of first through fourth normal form. Of course, the main advantage to normalization is to avoid the following anomalies: insertion, update, and 
+					deletion. I will skip ahead to a portion that was novel to me. Concurrency control provides a way for multiple users to safely query the same tables without breaking 
+					things. For example, “[w]ith MyISAM, MySQLi provides table-level locking to ensure database integrity when several clients (sessions) are accessing the same table at the 
+					same time. This means that whenever a particular table in a database is queried…by a particular session, that table is unavailable to all other sessions that are currently 
+					querying it.” I figured something like this existed, so it’s nice to be formally introduced to MyISAM. Another option for this is InnoDB; however, it operates at row-level 
+					locking as opposed to MyISAM’s table locking functionality. </p>
+
+				<p>The third section covers database access, which includes establishing a database connection, table creation and dropping, and more generally CRUD. CRUD stands for Create, 
+					Retrieve, Update, and Delete. I am familiar with each of these from previous coursework. Later on in this section, the author does cover PDOs in PHP, which serve as an 
+					abstraction layerfor the database to easily map to other extension such as MySQLi, PostgreSQL, or SQLite. I knew the PDO class had advantages, but I wasn’t aware of this 
+					one. I knew about its enhanced security to prevent “certain types of attacks on the database known as ‘SQL injection.’”
+				</p>
+				<p>The last section provides an overview of database testing. The author suggests unit testing other classes before testing the database to ensure there aren’t issues in the 
+					code accessing the database layer. Testing the db layer is very straight forward. Instantiate new instances and insert them as records into the database. Boolean values 
+					are then returned through assertion statements. After this is complete, integration testing can begin. The example provided seems to test the update and delete portions 
+					of CRUD. The final section also covers issue tracking. As discussed in the previous chapter, clients and developers must be able to open, comment on, and close issues. 
+					It is in this way that software projects can maintain the codebase and continue to improve.  
+				</p>
+		</section>
+	</div>
+	<div class="container">
+		<section class="jumbotron" id="blog">
 				<h6><i>March 18, 2021</i></h6>
 				<h5><strong>Blog Post Seven: Reflections on Reading</strong></h5>
 				<h3><em>Chapter 5</em></h3>
