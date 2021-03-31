@@ -37,6 +37,84 @@
 	</nav>
 	<div class="container">
 		<section class="jumbotron" id="blog">
+				<h6><i>April 01, 2021</i></h6>
+				<h5><strong>Blog Post Ten</strong></h5>
+				<h3><em>Meeting Charleston</em></h3>
+				
+				<p>As part of our experience as software engineers, Professor Bowring encouraged us to start attending MeetUps to connect with local community members and learn more about 
+					technology. I chose the <a href="https://www.meetup.com/CharlestonJS/">CharlestonJS</a> MeetUp group and attended a couple of different sessions. I will be discussing 
+					the latest session that I attended on NodeJS, which was held on Thursday, March 25 at 5:00PM. The NodeJS MeetUp is held monthly as a way for NodeJS users to sharpen their 
+					skills and build out their toolbox. The speaker for this virtual meetup was Tom Wilson, the head of CharlestonJS. Tom is the CEO of <a href="https://hyper63.com/">Hyper63</a>, 
+					an open-source services framework. He also has a <a href="https://blog.hyper63.com/intro-to-integration-testing/">blog</a> that provides tutorials on different tools 
+					and technologies. 
+				</p>
+				<p>Coincidentally, the discussion for this week was on api testing, which mostly included integration testing. Of course, this topic has been part of our readings for the 
+					past couple of weeks. Tom Wilson suggests using the <a href="https://github.com/substack/tape">tape</a> library to test, while <a href="jest">jest</a> is great for the 
+					frontend. Test Server is a helper library that helps him dynamically spin up a server to isolate tests as they run so that other tests don’t interfere with that test. 
+				</p>
+				<p>He began with building a test, which is the first part of test-driven development. In order to test everything that needs testing, Tom imported the Tape library, testServer, 
+					a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">fetch</a> library, and <a href="https://www.npmjs.com/package/fetch-mock">fetch-mock</a>. Fetch-mock 
+					allows the code to run and injects a fake fetch that was created as a global. The tests then become more deterministic and don’t depend on other services to be running for 
+					the test to run. Tom suggests running integration tests this way and then running end-to-end testing to fill in the gaps. Mock tests are helpful because the only thing 
+					that can break the test is the developer’s code. The alternative to this is to sift through all other dependencies to determine what is causing the problem. This is 
+					clearly very beneficial to the testing and can streamline otherwise lengthy testing. Tom suggests using Zod 3 to create a mock test and Insomnia Rest to keep track of 
+					APIs. Insomnia has a great dashboard for creating tests. As compared to Postman, Insomnia is much less verbose, providing easier setup and maintenance. This is clearly 
+					beneficial to developers who are typically working within a budget and on a fairly strict delivery timeline.  </p>
+
+				<p>Github includes an automated method to test. Tom outlines all these things in his blog. Tom suggests running all tests in CI by running yarn tests, which makes automated 
+				   integration tests easier than ever. He also noted that GitLab has something similar that works just as well. 
+				</p>
+				<p>Overall, it was great to see how testing works. While I am not familiar with all of the different testing libraries, Tom made my first real-world walkthrough of TDD very 
+					palatable. My next steps are to continue learning TDD and implement my own tests for small personal projects so that I can contribute more to CO-FOSS. In fact, this is the 
+					last step for me to take before I can finish a test on migrating inline JS.  
+				</p>
+		</section>
+	</div>
+	<div class="container">
+		<section class="jumbotron" id="blog">
+				<h6><i>March 30, 2021</i></h6>
+				<h5><strong>Blog Post Nine: Reflections on Reading</strong></h5>
+				<h3><em>Chapter 7</em></h3>
+				
+				<p>This week’s reading is from chapters seven and nine of our textbook. Chapter seven covers UI development, while chapter nine is a review of the steps taken after the 
+					development of a CO-FOSS project. In a way chapter seven is also a review because I took a course last semester on UI design and development. Nevertheless, this chapter 
+					is a good way for me to review the concepts of UI design through the lens of CO-FOSS. The chapter begins with a summary of the 10 principles of good UI design: 
+				</p>
+				<ol>
+					<li>Task Oriented</li>
+					<li>Language</li>
+					<li>Simplicity</li>
+					<li>Navigability</li>
+					<li>Visual consistency</li>
+					<li>Discoverability</li>
+					<li>Data integrity</li>
+					<li>Client-server integrity</li>
+					<li>Security</li>
+					<li>Documentation</li>
+				</ol>
+				<p>The next sections cover the Model View Control (MVC) pattern for implementing a UI and provides several examples that illustrate how MVC can be used. The model is the 
+					“code underlying the application’s logic and underlying data;” the view is the “code presenting that component of the interface to the user, and…[t]he controller 
+					[is the] code controlling the user’s input, output, and navigational functionality for that component” (209). Using this pattern helps to silo out the MVC triples 
+					into components that can easily be tested and maintained. I really like that the text connects the ten principles of UI design to the MVC pattern. Design principles 
+					2,3,4,5 and 6 are part of the view, while principles 7, 8, and 9 are enforced by the controller (210). 
+				</p>
+				<p>Next, the author examines how to create user-level security through login and password encryption. The controller that gets the POST from the view for a login, encrypts 
+					the password, checks it against the stored password in the database, and logins if successful. While this is a very straight forward thing that just about every application 
+					does, it’s interesting to see how easily it is implemented on the Homebase login application. In under 30 lines of code, the user can login. I think that’s just incredible. 
+					I’ve done some of this in my server-side programming class, but we never did much with encryption. The Homebase application uses access levels to distribute permissions to 
+					users. All of this is handled in the login view and controller code. </p>
+
+				<p>The author continues to discuss security concerns in CO-FOSS projects by describing two types of common attacks: SQL injection attacks and cross-site scripting attacks. 
+					First, “SQL injection is a code injection technique that exploits a security vulnerability to corrupt or destroy information stored in a database” (219). Some ways to 
+					avoid SQL injection include filtering user input to not allow single quotes. 
+				</p>
+				<p>Using the mysql_real_escape_string() function will filter out single quotes so that injections can be prevented. Similarly, css attacks can be filtered to validate data 
+					coming in from different sources. For example, if a user is submitting a phone number, then the data should be checked that it only contains digits. Furthermore, the data 
+					should be assumed to be invalid until it is checked to be be valid using a regular expression or something similar. </p>
+		</section>
+	</div>
+	<div class="container">
+		<section class="jumbotron" id="blog">
 				<h6><i>March 24, 2021</i></h6>
 				<h5><strong>Blog Post Eight: Reflections on Reading</strong></h5>
 				<h3><em>Chapter 6</em></h3>
